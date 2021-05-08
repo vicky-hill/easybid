@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(cors());
 
 // Mount Routes
-app.use('/api/user', require('./routs/auth'));
+app.use('/api/auth', require('./routes/auth'));
 
 
 app.listen(PORT, console.log('Server running on ' + PORT));
